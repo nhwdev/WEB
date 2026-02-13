@@ -79,18 +79,17 @@
                     if (i == 1) {
                         html += `<th>${j + 1}단</th>`
                     } else if (i < 10) {
-                        html += `<td>${(j + 1)}*${i}=${(j + 1) * i}`
+                        html += `<td>${(j + 1)}*${i}=${(j + 1) * i}</td>`
                     } else if (i == 10) {
                         html += `<th>${j + 5}단</th>`
                     } else {
-                        html += `<td>${(j + 5)}*${i - 9}=${(j + 5) * (i - 9)}`
+                        html += `<td>${(j + 5)}*${i - 9}=${(j + 5) * (i - 9)}</td>`
                     }
                 }
                 html += `</tr>`
             }
             document.querySelector("#gugudan").innerHTML = html
         }
-
     </script>
 </body>
 
